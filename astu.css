@@ -1,0 +1,210 @@
+*{
+    /* background-color:lightgray ; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: solid 1px black; */
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;    
+    margin-top: 20px;
+    padding: 10px 0px;
+    z-index: 99;
+    letter-spacing: 0.1rem;
+}
+.fixed-menu{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background:crimson ;
+    z-index: 11;
+    top: -100;
+    transition: all ease 0.5s;
+}
+/* .name{
+    transition: all ease 0.2s;
+
+}
+.name:hover{
+    color: blueviolet;
+    content: " no name"; */
+
+/* } */
+.pointer{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: blue;
+  position: fixed;
+  cursor: default;
+  color: crimson;
+}
+.right, .left{
+    cursor: pointer;
+    font-family: sans-serif;
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+.rightsi,.leftsi{
+
+    font-family: sans-serif;
+}
+.cursor{
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  /* transform: translate(-50%, -50%); */
+  z-index: 5;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+.cursor video{
+    height: 400px;
+    width: 400px;
+}
+.leftsi{
+    z-index: 100;
+    bottom: 25px;
+    left: 25px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-size: 22px; 
+}
+.rightsi{
+    z-index: 100;
+    bottom: 25px;
+    right: 25px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-size: 22px; 
+    /* border: solid 2px black; */
+
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    width: 100%;
+    height: 100vh;
+    font-family:cursive;
+    font-size: 70px;
+    gap: 30px;
+    
+}
+.hero2{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.hero2 iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    object-fit: cover;
+    z-index: 6;
+    
+}
+.hero3{
+    padding: 25px;
+    margin: 25px 0px;
+    
+
+}
+.first{
+    margin: 50px 0px;
+     padding: 50px 0px;
+ 
+
+
+
+}
+.second span{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+     margin: 80px 50px 0px 0px;
+     padding: 50px 0px;
+    font-size: 120px; 
+   
+
+}
+.third{
+    padding: 120px 0px 0px 0px;
+    height: 90vh;
+    width:100% ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    /* border: solid 2px black; */
+
+}
+.forth{
+    height: 90vh;
+    width:100% ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+    /* border: solid 2px black; */
+}
+.box1,.box2 {
+    height: 98%;
+    width: 45%;
+    border: solid 2px black;
+    transition: all ease-in 0.2s;
+   
+}
+.box3,.box4 {
+    height: 98%;
+    width: 45%;
+    border: solid 2px black;
+    transition: all ease-in 0.2s;
+    
+}
+/* .box1:hover,.box2:hover{
+    height:95%;
+    width: 42%;
+}
+.box3:hover,.box4:hover{
+    height:95%;
+    width: 42%; */
+/* } */
+.lists{
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 120px;
+    gap: 2rem;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.lists:hover .item1 {
+  opacity: 0.2;
+}
+
+/* Keep the hovered item full opacity */
+.lists .item1:hover {
+  opacity: 1;
+}
